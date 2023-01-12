@@ -1,0 +1,13 @@
+{
+    "browsers": [ "safari:headless" ],
+    "src": "testcafe.js",
+    "reporter": [
+      {
+        "name": "spec"
+      },
+      {
+          "name": "json",
+          "output": "report.json"
+      }
+    ]
+  }

@@ -1,0 +1,17 @@
+{
+  "name": "testcafe",
+  "version": "1.0.0",
+  "description": "Automation Test Suite",
+  "main": "testcafe.js",
+  "scripts": {
+    "test:safari": "./node_modules/.bin/testcafe safari -c 3 -e testcafe.js",
+    "test:chrome": "./node_modules/.bin/testcafe chrome -c 3 -e testcafe.js",
+    "test:firefox": "./node_modules/.bin/testcafe firefox -c 3 -e testcafe.js",
+    "test:headless": "./node_modules/.bin/testcafe -c 3 -e"
+  },
+  "author": "Dmitry Yarygin",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^2.1.0"
+  }
+}
