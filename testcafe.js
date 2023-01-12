@@ -14,9 +14,6 @@ import homePage from './page-objects/home-page';
 const { size } = require("lodash");
 const { Selector } = require("testcafe");
 
-function checkNoPageNotFound(t){
-    return t.expect(Selector('html').textContent).notContains('Page not found');
-}
 
 function verifyAllLinks(url_iteration, check_for_404){
     for (let i = 0; i < size(url_iteration); i++)
@@ -29,6 +26,10 @@ function verifyAllLinks(url_iteration, check_for_404){
             }
         });
     }
+}
+
+function checkNoPageNotFound(t){
+    return t.expect(Selector('html').textContent).notContains('Page not found');
 }
 
 fixture`Verify Links`
